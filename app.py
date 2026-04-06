@@ -45,6 +45,11 @@ st.markdown("""
     background-clip: text; letter-spacing: 3px; margin-bottom: 0; text-align: center;
     animation: glow-pulse 3s ease-in-out infinite alternate;
 }
+.super-header {
+    font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 0.8rem;
+    color: #64748b; letter-spacing: 5px; text-transform: uppercase;
+    text-align: center; margin-bottom: -0.5rem; opacity: 0.8;
+}
 @keyframes glow-pulse { 0% { filter: brightness(1); } 100% { filter: brightness(1.25); } }
 .hero-subtitle {
     font-family: 'Inter', sans-serif; font-weight: 300; font-size: 1.05rem;
@@ -118,6 +123,7 @@ section[data-testid="stSidebar"] { border-right: 1px solid rgba(0,240,255,0.12);
 """, unsafe_allow_html=True)
 
 # ── Hero Header ──────────────────────────────────────────────────────────────
+st.markdown('<p class="super-header">INNOVATION IN PROTECTIVE TEXTILE</p>', unsafe_allow_html=True)
 st.markdown('<p class="hero-title">AIMATRY</p>', unsafe_allow_html=True)
 st.markdown(
     '<p class="hero-subtitle">'
