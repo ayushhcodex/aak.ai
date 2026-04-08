@@ -16,7 +16,7 @@ PROPERTY_KEYS = [
 # ═══════════════════════════════════════════════════════════════════════════════
 
 SCENARIOS = {
-    "-40°C Arctic Combat": {
+    "Extreme Cold Weather": {
         "blend": "Meta-aramid / Aerogel Nanoporous Composite",
         "feature": "Maximizes thermal insulation while retaining high thermo-physiological comfort (THL).",
         "scores": {"Thermal Protection (HTP)": 85, "Comfort & Breathability (THL)": 70, "Tensile Strength": 60, "Flexibility": 80, "Manufacturability": 90},
@@ -37,7 +37,7 @@ SCENARIOS = {
             ("assistant", "⚡ Synthetic accessibility score is **90/100** — all monomers are commercially available and the process uses standard interfacial polycondensation. Scale-up risk is minimal."),
         ],
     },
-    "High Ballistic Threat": {
+    "Ballistic Impact": {
         "blend": "Para-aramid / Carbon Nanotube (CNT) Matrix",
         "feature": "Extreme tensile strength and shear thickening properties upon impact.",
         "scores": {"Thermal Protection (HTP)": 50, "Comfort & Breathability (THL)": 40, "Tensile Strength": 95, "Flexibility": 45, "Manufacturability": 75},
@@ -58,7 +58,7 @@ SCENARIOS = {
             ("assistant", "⚠️ Trade-off: comfort and breathability score is **40/100** — this is a rigid, tightly woven system. For prolonged wear, I recommend pairing with a separate comfort liner."),
         ],
     },
-    "40% Oxygen-Enriched Lunar Environment": {
+    "Lunar Operations": {
         "blend": "Polyimide / Aluminized Mylar Laminate with Auxetic Weave",
         "feature": "Maximum radiation shielding and extreme temperature variance tolerance.",
         "scores": {"Thermal Protection (HTP)": 95, "Comfort & Breathability (THL)": 20, "Tensile Strength": 80, "Flexibility": 60, "Manufacturability": 50},
@@ -79,7 +79,7 @@ SCENARIOS = {
             ("assistant", "⚠️ Synthetic accessibility is only **50/100** — the auxetic laser-cutting step requires specialized equipment. This is the primary bottleneck for mass production."),
         ],
     },
-    "Deep-Sea Pressure (1000 m Depth)": {
+    "Deep Ocean Dive": {
         "blend": "UHMWPE / Graphene Oxide Laminate",
         "feature": "Exceptional compressive strength and hydrostatic pressure resistance with neutral buoyancy.",
         "scores": {"Thermal Protection (HTP)": 55, "Comfort & Breathability (THL)": 35, "Tensile Strength": 90, "Flexibility": 50, "Manufacturability": 65},
@@ -100,7 +100,7 @@ SCENARIOS = {
             ("assistant", "🔬 The tensile strength score of **90/100** reflects the gel-spun fiber's crystal orientation — over 95% crystallinity along the chain axis."),
         ],
     },
-    "Chemical / Biological Warfare (CBRN)": {
+    "Chemical Hazmat": {
         "blend": "Activated Carbon Fiber (ACF) / Selectively Permeable PTFE Membrane",
         "feature": "Multi-spectrum chemical agent adsorption with one-way moisture vapor transport.",
         "scores": {"Thermal Protection (HTP)": 40, "Comfort & Breathability (THL)": 60, "Tensile Strength": 55, "Flexibility": 75, "Manufacturability": 85},
@@ -121,7 +121,7 @@ SCENARIOS = {
             ("assistant", "✅ Synthetic accessibility score is **85/100** — this is one of the most manufacturable designs. All components are in active military supply chains, reducing adoption risk significantly."),
         ],
     },
-    "Volcanic Proximity (1200°C Radiant Heat)": {
+    "Extreme Radiant Heat": {
         "blend": "Basalt Fiber / Silica Aerogel Quilted Panel with Zirconia Coating",
         "feature": "Extreme radiant-heat reflection and multi-layer ablative protection for operations near active lava flows.",
         "scores": {"Thermal Protection (HTP)": 98, "Comfort & Breathability (THL)": 15, "Tensile Strength": 70, "Flexibility": 30, "Manufacturability": 45},
@@ -142,7 +142,7 @@ SCENARIOS = {
             ("assistant", "⚠️ The major trade-off is **flexibility (30/100)** and **comfort (15/100)**. This is essentially a rigid panel system. Recommended for proximity suits with exoskeleton support."),
         ],
     },
-    "Hypersonic Re-entry (Mach 25+)": {
+    "Aerospace Re-entry": {
         "blend": "Carbon-Carbon (C/C) Composite / Phenolic-Impregnated Ablative Layer",
         "feature": "Ultra-high-temperature oxidation resistance with controlled ablation above 2500°C.",
         "scores": {"Thermal Protection (HTP)": 99, "Comfort & Breathability (THL)": 10, "Tensile Strength": 85, "Flexibility": 15, "Manufacturability": 30},
@@ -185,7 +185,7 @@ SCENARIOS = {
             ("assistant", "⚠️ Trade-off: tensile strength is only **40/100** — milkweed is a short-staple fiber with low inherent strength. The recycled meta-aramid outer shell compensates but this is not suitable for high-abrasion tactical use."),
         ],
     },
-    "Wildfire Firefighter (CAL FIRE Standard)": {
+    "Wildland Firefighting": {
         "blend": "PBO (Zylon®) / Aluminized Aramid Shell with Moisture-Wicking Liner",
         "feature": "Maximum flashover protection with sustained comfort for 12+ hour shifts in active wildfire zones.",
         "scores": {"Thermal Protection (HTP)": 92, "Comfort & Breathability (THL)": 55, "Tensile Strength": 88, "Flexibility": 65, "Manufacturability": 60},
@@ -206,7 +206,7 @@ SCENARIOS = {
             ("assistant", "⚠️ Key limitation: PBO degrades under prolonged UV exposure. The para-aramid blend (70%) mitigates this but gear should be stored away from sunlight. Shelf life: ~5 years per NFPA guidelines."),
         ],
     },
-    "Industrial Flash Fire (Petrochemical)": {
+    "Industrial Flash Fire": {
         "blend": "FR Viscose / Nomex® IIIA Blend with Antistatic Grid",
         "feature": "Certified flash fire protection (ATPV > 12 cal/cm²) with inherent electrostatic dissipation for petrochemical facilities.",
         "scores": {"Thermal Protection (HTP)": 70, "Comfort & Breathability (THL)": 75, "Tensile Strength": 50, "Flexibility": 85, "Manufacturability": 95},
