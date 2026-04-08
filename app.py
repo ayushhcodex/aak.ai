@@ -36,6 +36,15 @@ st.set_page_config(
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+.team-badge {
+    position: fixed; top: 12px; right: 16px; z-index: 9999;
+    background: linear-gradient(135deg, rgba(0,240,255,0.12), rgba(0,255,136,0.08));
+    border: 1px solid rgba(0,240,255,0.35); border-radius: 8px;
+    padding: 6px 16px; font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem; font-weight: 700; color: #00f0ff;
+    letter-spacing: 3px; backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0,240,255,0.15);
+}
 .main .block-container { padding-top: 2rem; }
 
 .hero-title {
@@ -130,6 +139,7 @@ section[data-testid="stSidebar"] { border-right: 1px solid rgba(0,240,255,0.12);
 .esg-value { font-family: 'Orbitron', sans-serif; font-size: 1.4rem; color: #00ff88; }
 .esg-label { font-family: 'Inter', sans-serif; font-size: 0.72rem; color: #64748b; margin-top: 0.2rem; }
 </style>
+<div class="team-badge">TEAM AAK_AI</div>
 """, unsafe_allow_html=True)
 
 # ── Hero Header ──────────────────────────────────────────────────────────────
