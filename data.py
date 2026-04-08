@@ -22,8 +22,6 @@ SCENARIOS = {
         "scores": {"Thermal Protection (HTP)": 85, "Comfort & Breathability (THL)": 70, "Tensile Strength": 60, "Flexibility": 80, "Synthetic Accessibility": 90},
         "confidence": 92,
         "status": "✅ Commercial",
-        "cost_inr": "₹4,500–6,000/kg",
-        "cost_usd": "$55–72/kg",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 31, "water_L": 80},
         "layers": [
             {"layer": "Outer Shell", "material": "Meta-aramid woven (Nomex-type)", "thickness_mm": 0.8, "function": "Flame resistance, abrasion"},
@@ -51,8 +49,6 @@ SCENARIOS = {
         "scores": {"Thermal Protection (HTP)": 50, "Comfort & Breathability (THL)": 40, "Tensile Strength": 95, "Flexibility": 45, "Synthetic Accessibility": 75},
         "confidence": 88,
         "status": "⚠️ Active R&D",
-        "cost_inr": "₹9,000–14,000/kg",
-        "cost_usd": "$108–168/kg",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 35, "water_L": 120},
         "layers": [
             {"layer": "Strike Face", "material": "Para-aramid / CNT woven (34 threads/cm)", "thickness_mm": 1.2, "function": "Primary ballistic resistance"},
@@ -80,8 +76,6 @@ SCENARIOS = {
         "scores": {"Thermal Protection (HTP)": 95, "Comfort & Breathability (THL)": 20, "Tensile Strength": 80, "Flexibility": 60, "Synthetic Accessibility": 50},
         "confidence": 79,
         "status": "✅ NASA-Deployed",
-        "cost_inr": "₹18,000–25,000/kg",
-        "cost_usd": "$215–300/kg",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 45, "water_L": 90},
         "layers": [
             {"layer": "Outer Micrometeorite", "material": "Auxetic re-entrant polyimide weave", "thickness_mm": 1.5, "function": "Impact self-sealing (ν = −0.7)"},
@@ -109,9 +103,7 @@ SCENARIOS = {
         "scores": {"Thermal Protection (HTP)": 55, "Comfort & Breathability (THL)": 35, "Tensile Strength": 90, "Flexibility": 50, "Synthetic Accessibility": 65},
         "confidence": 85,
         "status": "⚠️ Active R&D",
-        "cost_inr": "₹7,500–11,000/kg",
-        "cost_usd": "$90–132/kg",
-        "sustainability": {"bio_based_pct": 0, "recyclable": "Partial", "co2_kg": 22, "water_L": 50},
+        "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 22, "water_L": 50},
         "layers": [
             {"layer": "Outer Abrasion", "material": "UHMWPE plain-weave", "thickness_mm": 1.0, "function": "Abrasion, cut resistance"},
             {"layer": "GO Barrier", "material": "Graphene oxide LbL nanocoating", "thickness_mm": 0.0002, "function": "Water ingress barrier (+35% stiffness)"},
@@ -138,8 +130,6 @@ SCENARIOS = {
         "scores": {"Thermal Protection (HTP)": 40, "Comfort & Breathability (THL)": 60, "Tensile Strength": 55, "Flexibility": 75, "Synthetic Accessibility": 85},
         "confidence": 94,
         "status": "✅ Military Deployed",
-        "cost_inr": "₹6,500–9,000/kg",
-        "cost_usd": "$78–108/kg",
         "sustainability": {"bio_based_pct": 0, "recyclable": "Partial", "co2_kg": 28, "water_L": 60},
         "layers": [
             {"layer": "Outer Shell", "material": "Ripstop nylon/cotton blend", "thickness_mm": 0.5, "function": "Durability, IR signature reduction"},
@@ -167,8 +157,6 @@ SCENARIOS = {
         "scores": {"Thermal Protection (HTP)": 98, "Comfort & Breathability (THL)": 15, "Tensile Strength": 70, "Flexibility": 30, "Synthetic Accessibility": 45},
         "confidence": 76,
         "status": "⚠️ Emerging Concept",
-        "cost_inr": "₹35,000–55,000/kg",
-        "cost_usd": "$420–660/kg",
         "sustainability": {"bio_based_pct": 15, "recyclable": "Partial", "co2_kg": 52, "water_L": 140},
         "layers": [
             {"layer": "Outer Reflective", "material": "YSZ plasma-sprayed zirconia (250 μm)", "thickness_mm": 0.25, "function": "IR reflection (>85%), Tm = 2715°C"},
@@ -196,8 +184,6 @@ SCENARIOS = {
         "scores": {"Thermal Protection (HTP)": 99, "Comfort & Breathability (THL)": 10, "Tensile Strength": 85, "Flexibility": 15, "Synthetic Accessibility": 30},
         "confidence": 71,
         "status": "✅ Aerospace Proven",
-        "cost_inr": "₹4,20,000+/kg",
-        "cost_usd": "$5,000+/kg",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 180, "water_L": 400},
         "layers": [
             {"layer": "Outer Ablative", "material": "Phenolic-impregnated silica cloth (PICA-type)", "thickness_mm": 8.0, "function": "Sacrificial ablation (0.05 mm/s at 1.5 MW/m²)"},
@@ -226,8 +212,6 @@ SCENARIOS = {
         "scores": {"Thermal Protection (HTP)": 72, "Comfort & Breathability (THL)": 78, "Tensile Strength": 40, "Flexibility": 88, "Synthetic Accessibility": 82},
         "confidence": 74,
         "status": "🌱 Emerging Research",
-        "cost_inr": "₹3,200–5,000/kg",
-        "cost_usd": "$38–60/kg",
         "sustainability": {"bio_based_pct": 62, "recyclable": "Yes", "co2_kg": 8, "water_L": 15},
         "layers": [
             {"layer": "Outer Shell", "material": "Recycled meta-aramid woven", "thickness_mm": 0.7, "function": "Flame resistance, durability"},
@@ -255,8 +239,6 @@ SCENARIOS = {
         "scores": {"Thermal Protection (HTP)": 92, "Comfort & Breathability (THL)": 55, "Tensile Strength": 88, "Flexibility": 65, "Synthetic Accessibility": 60},
         "confidence": 87,
         "status": "✅ Deployed (variants)",
-        "cost_inr": "₹12,000–18,000/kg",
-        "cost_usd": "$144–216/kg",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 42, "water_L": 110},
         "layers": [
             {"layer": "Outer Shell", "material": "PBO (Zylon) / para-aramid blend, aluminized", "thickness_mm": 1.0, "function": "Radiant heat reflection, LOI = 68%"},
@@ -284,8 +266,6 @@ SCENARIOS = {
         "scores": {"Thermal Protection (HTP)": 70, "Comfort & Breathability (THL)": 75, "Tensile Strength": 50, "Flexibility": 85, "Synthetic Accessibility": 95},
         "confidence": 96,
         "status": "✅ Commercial",
-        "cost_inr": "₹2,800–4,200/kg",
-        "cost_usd": "$34–50/kg",
         "sustainability": {"bio_based_pct": 40, "recyclable": "Partial", "co2_kg": 18, "water_L": 45},
         "layers": [
             {"layer": "Outer Shell", "material": "FR viscose / Nomex IIIA (60:40) with P140 carbon grid", "thickness_mm": 0.6, "function": "Flash fire protection, ATPV > 12 cal/cm²"},
@@ -315,16 +295,16 @@ SCENARIOS = {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 COMMERCIAL_BENCHMARKS = [
-    {"product": "Kevlar® 29", "manufacturer": "DuPont (USA)", "type": "Para-aramid fiber", "tensile_GPa": 2.9, "density_gcm3": 1.44, "LOI_pct": 29, "max_temp_C": 500, "cost_usd_kg": "$25–35"},
-    {"product": "Kevlar® 49", "manufacturer": "DuPont (USA)", "type": "Para-aramid (high modulus)", "tensile_GPa": 3.6, "density_gcm3": 1.44, "LOI_pct": 29, "max_temp_C": 500, "cost_usd_kg": "$30–45"},
-    {"product": "Nomex® IIIA", "manufacturer": "DuPont (USA)", "type": "Meta-aramid blend", "tensile_GPa": 0.6, "density_gcm3": 1.38, "LOI_pct": 30, "max_temp_C": 370, "cost_usd_kg": "$40–55"},
-    {"product": "Twaron® 2000", "manufacturer": "Teijin (Netherlands)", "type": "Para-aramid fiber", "tensile_GPa": 3.15, "density_gcm3": 1.44, "LOI_pct": 29, "max_temp_C": 500, "cost_usd_kg": "$22–32"},
-    {"product": "Dyneema® SK75", "manufacturer": "DSM (Netherlands)", "type": "UHMWPE gel-spun", "tensile_GPa": 3.5, "density_gcm3": 0.97, "LOI_pct": 17, "max_temp_C": 80, "cost_usd_kg": "$60–90"},
-    {"product": "Technora® T240", "manufacturer": "Teijin (Japan)", "type": "Co-poly-aramid", "tensile_GPa": 3.4, "density_gcm3": 1.39, "LOI_pct": 25, "max_temp_C": 500, "cost_usd_kg": "$35–50"},
-    {"product": "Zylon® AS", "manufacturer": "Toyobo (Japan)", "type": "PBO fiber", "tensile_GPa": 5.8, "density_gcm3": 1.56, "LOI_pct": 68, "max_temp_C": 650, "cost_usd_kg": "$80–120"},
-    {"product": "Pyrogel® XT-E", "manufacturer": "Aspen Aerogels (USA)", "type": "Silica aerogel blanket", "tensile_GPa": None, "density_gcm3": 0.20, "LOI_pct": None, "max_temp_C": 650, "cost_usd_kg": "$45–70"},
-    {"product": "JSLIST Suit", "manufacturer": "Gore / US Army", "type": "CBRN protective ensemble", "tensile_GPa": None, "density_gcm3": None, "LOI_pct": None, "max_temp_C": None, "cost_usd_kg": "$200–350/suit"},
-    {"product": "Basofil® MCF", "manufacturer": "BASF (Germany)", "type": "Melamine fiber", "tensile_GPa": 0.28, "density_gcm3": 1.40, "LOI_pct": 32, "max_temp_C": 370, "cost_usd_kg": "$15–25"},
+    {"product": "Kevlar® 29", "manufacturer": "DuPont (USA)", "type": "Para-aramid fiber", "tensile_GPa": 2.9, "density_gcm3": 1.44, "LOI_pct": 29, "max_temp_C": 500},
+    {"product": "Kevlar® 49", "manufacturer": "DuPont (USA)", "type": "Para-aramid (high modulus)", "tensile_GPa": 3.6, "density_gcm3": 1.44, "LOI_pct": 29, "max_temp_C": 500},
+    {"product": "Nomex® IIIA", "manufacturer": "DuPont (USA)", "type": "Meta-aramid blend", "tensile_GPa": 0.6, "density_gcm3": 1.38, "LOI_pct": 30, "max_temp_C": 370},
+    {"product": "Twaron® 2000", "manufacturer": "Teijin (Netherlands)", "type": "Para-aramid fiber", "tensile_GPa": 3.15, "density_gcm3": 1.44, "LOI_pct": 29, "max_temp_C": 500},
+    {"product": "Dyneema® SK75", "manufacturer": "DSM (Netherlands)", "type": "UHMWPE gel-spun", "tensile_GPa": 3.5, "density_gcm3": 0.97, "LOI_pct": 17, "max_temp_C": 80},
+    {"product": "Technora® T240", "manufacturer": "Teijin (Japan)", "type": "Co-poly-aramid", "tensile_GPa": 3.4, "density_gcm3": 1.39, "LOI_pct": 25, "max_temp_C": 500},
+    {"product": "Zylon® AS", "manufacturer": "Toyobo (Japan)", "type": "PBO fiber", "tensile_GPa": 5.8, "density_gcm3": 1.56, "LOI_pct": 68, "max_temp_C": 650},
+    {"product": "Pyrogel® XT-E", "manufacturer": "Aspen Aerogels (USA)", "type": "Silica aerogel blanket", "tensile_GPa": None, "density_gcm3": 0.20, "LOI_pct": None, "max_temp_C": 650},
+    {"product": "JSLIST Suit", "manufacturer": "Gore / US Army", "type": "CBRN protective ensemble", "tensile_GPa": None, "density_gcm3": None, "LOI_pct": None, "max_temp_C": None},
+    {"product": "Basofil® MCF", "manufacturer": "BASF (Germany)", "type": "Melamine fiber", "tensile_GPa": 0.28, "density_gcm3": 1.40, "LOI_pct": 32, "max_temp_C": 370},
 ]
 
 

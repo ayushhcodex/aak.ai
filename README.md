@@ -93,8 +93,6 @@ All scenario data is stored in `data.py` under the `SCENARIOS` dictionary. To ad
        "scores": { ... }, # Normalized 0-100 scores
        "confidence": 90,
        "status": "✅ Commercial",
-       "cost_inr": "₹X,XXX/kg",
-       "cost_usd": "$XX/kg",
        "sustainability": { ... },
        "layers": [ ... ],
        "aging": { ... },

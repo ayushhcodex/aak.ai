@@ -327,9 +327,6 @@ if generate_clicked:
                 <div class="confidence-bar-bg"><div class="confidence-bar-fill" style="width:{data["confidence"]}%"></div></div>
                 <div class="confidence-label"><span style="font-size:0.72rem;">epistemic + aleatoric uncertainty</span><span style="font-size:0.72rem;">target: >75%</span></div>
             </div>
-            <div style="margin-top:1rem; font-family:Inter; font-size:0.82rem; color:#64748b;">
-                💰 Est. Cost: <b style="color:#00ff88;">{data["cost_inr"]}</b> ({data["cost_usd"]})
-            </div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -443,11 +440,11 @@ if generate_clicked:
     # ── Tab 6: Comparison Table ─────────────────────────────────
     with tab_compare:
         st.markdown("<p style='font-family:Inter; font-size:0.9rem; color:#94a3b8; margin-bottom:1rem;'>"
-                    "Side-by-side performance scores for all scenarios with cost and status.</p>",
+                    "Side-by-side performance scores for all scenarios with status details.</p>",
                     unsafe_allow_html=True)
         rows = []
         for name, sc in SCENARIOS.items():
-            row = {"Scenario": name, "Material": sc["blend"][:50], "Status": sc["status"], "Cost": sc["cost_inr"], "Confidence": sc["confidence"]}
+            row = {"Scenario": name, "Material": sc["blend"][:50], "Status": sc["status"], "Confidence": sc["confidence"]}
             row.update(sc["scores"])
             rows.append(row)
         df = pd.DataFrame(rows)
@@ -465,7 +462,7 @@ if generate_clicked:
                     "Published specifications of commercially available protective fibers and systems from global defence contractors.</p>",
                     unsafe_allow_html=True)
         bench_df = pd.DataFrame(COMMERCIAL_BENCHMARKS)
-        bench_df.columns = ["Product", "Manufacturer", "Type", "Tensile (GPa)", "Density (g/cm³)", "LOI (%)", "Max Temp (°C)", "Cost (USD/kg)"]
+        bench_df.columns = ["Product", "Manufacturer", "Type", "Tensile (GPa)", "Density (g/cm³)", "LOI (%)", "Max Temp (°C)"]
         st.dataframe(bench_df, use_container_width=True, height=420)
 
     # ── Tab 8: Fiber Database ───────────────────────────────────
