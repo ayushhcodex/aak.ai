@@ -164,7 +164,7 @@ SCENARIOS = {
         ],
     },
     # ── NEW SCENARIOS ─────────────────────────────────────────────
-    "Sustainable Arctic (Milkweed / PCM)": {
+    "Milkweed": {
         "blend": "Milkweed Floss / Recycled Meta-aramid / Bio-PCM Microcapsule Composite",
         "feature": "Sustainable, bio-based thermal insulation with adaptive phase-change temperature regulation for sub-zero operations.",
         "scores": {"Thermal Protection (HTP)": 72, "Comfort & Breathability (THL)": 78, "Tensile Strength": 40, "Flexibility": 88, "Manufacturability": 82},
