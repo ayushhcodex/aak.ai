@@ -462,7 +462,7 @@ if generate_clicked:
         st.dataframe(std_df, use_container_width=True, height=420)
 
     # ── Chat-Style AI Explainer ─────────────────────────────────
-    st.markdown('<div class="section-header">🤖 AI Design Rationale</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header">🤖 Why Our AI Chose This</div>', unsafe_allow_html=True)
     st.markdown("<p style='font-family:Inter; font-size:0.9rem; color:#94a3b8; margin-bottom:1rem;'>"
                 "The generative model explains its material selection reasoning in natural language.</p>",
                 unsafe_allow_html=True)
