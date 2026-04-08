@@ -340,8 +340,8 @@ if generate_clicked:
     # ── Advanced Analysis Tabs ──────────────────────────────────
     st.markdown('<div class="section-header">Advanced Analysis</div>', unsafe_allow_html=True)
 
-    tab_pareto, tab_synth, tab_layers, tab_aging, tab_esg, tab_compare, tab_bench, tab_fibers, tab_standards = st.tabs([
-        "📈 Pareto Frontier", "⚗️ Synthetic Route", "🧱 Layer Stack",
+    tab_pareto, tab_synth, tab_aging, tab_esg, tab_compare, tab_bench, tab_fibers, tab_standards = st.tabs([
+        "📈 Pareto Frontier", "⚗️ Synthetic Route",
         "📉 Aging & Durability", "🌱 Sustainability", "📋 Comparison Table",
         "🏭 Commercial Benchmarks", "🧵 Fiber Database", "📜 Standards Reference",
     ])
@@ -350,7 +350,7 @@ if generate_clicked:
     with tab_pareto:
         st.markdown("<p style='font-family:Inter; font-size:0.9rem; color:#94a3b8; margin-bottom:1rem;'>"
                     "The Pareto frontier shows the trade-off between <b>composite performance</b> "
-                    "(average of HTP, Strength, Flexibility) and <b>synthetic accessibility</b>. "
+                    "(average of HTP, Strength, Flexibility) and <b>manufacturability</b>. "
                     "Grey dots represent screened candidate polymers. The AI selects the material closest to the Pareto-optimal front.</p>",
                     unsafe_allow_html=True)
         pareto_fig = build_pareto_chart(selected_threat, data["scores"])
@@ -371,27 +371,6 @@ if generate_clicked:
                     <div class="synth-desc">{step["desc"]}</div>
                     <div class="synth-smiles">{step["smiles"]}</div></div></div>"""
         st.markdown(steps_html, unsafe_allow_html=True)
-
-    # ── Tab 3: Layer Stack ──────────────────────────────────────
-    with tab_layers:
-        st.markdown("<p style='font-family:Inter; font-size:0.9rem; color:#94a3b8; margin-bottom:1rem;'>"
-                    "Multi-layer garment cross-section showing each functional layer from outer to skin side.</p>",
-                    unsafe_allow_html=True)
-        layer_colors = ["#00f0ff", "#00e070", "#20c0ff", "#60e0a0", "#40d0d0"]
-        layers = data["layers"]
-        total_mm = sum(l["thickness_mm"] for l in layers)
-        layers_html = ""
-        for i, layer in enumerate(layers):
-            pct = max(layer["thickness_mm"] / total_mm * 100, 8)
-            c = layer_colors[i % len(layer_colors)]
-            layers_html += f"""
-            <div class="layer-row">
-                <div class="layer-bar" style="width:{pct}%; background:{c}; min-width:80px;">{layer["thickness_mm"]} mm</div>
-                <div class="layer-info"><b style="color:#e2e8f0;">{layer["layer"]}</b>: {layer["material"]}<br>
-                <span style="font-size:0.72rem; color:#64748b;">↳ {layer["function"]}</span></div>
-            </div>"""
-        layers_html += f'<div style="font-family:Inter; font-size:0.82rem; color:#64748b; margin-top:0.8rem;">Total thickness: <b style="color:#00ff88;">{total_mm:.2f} mm</b></div>'
-        st.markdown(layers_html, unsafe_allow_html=True)
 
     # ── Tab 4: Aging & Durability ───────────────────────────────
     with tab_aging:

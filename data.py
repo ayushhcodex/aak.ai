@@ -23,12 +23,6 @@ SCENARIOS = {
         "confidence": 92,
         "status": "✅ Commercial",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 31, "water_L": 80},
-        "layers": [
-            {"layer": "Outer Shell", "material": "Meta-aramid woven (Nomex-type)", "thickness_mm": 0.8, "function": "Flame resistance, abrasion"},
-            {"layer": "Thermal Barrier", "material": "Silica aerogel blanket", "thickness_mm": 10.0, "function": "Insulation (λ = 0.018 W/mK)"},
-            {"layer": "Moisture Barrier", "material": "Expanded PTFE film", "thickness_mm": 0.05, "function": "Waterproofing, vapor permeable"},
-            {"layer": "Comfort Liner", "material": "Meta-aramid knit", "thickness_mm": 0.4, "function": "Wicking, skin comfort"},
-        ],
         "aging": {"years": [0,1,2,3,4,5], "retention_pct": [100,97,93,88,82,75], "metric": "HTP retention (%)"},
         "synth_route": [
             {"title": "Monomer Selection", "desc": "Select isophthaloyl chloride and m-phenylenediamine from curated library.", "smiles": "c1cc(N)cccc1N + ClC(=O)c1cccc(C(=O)Cl)c1"},
@@ -50,12 +44,6 @@ SCENARIOS = {
         "confidence": 88,
         "status": "⚠️ Active R&D",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 35, "water_L": 120},
-        "layers": [
-            {"layer": "Strike Face", "material": "Para-aramid / CNT woven (34 threads/cm)", "thickness_mm": 1.2, "function": "Primary ballistic resistance"},
-            {"layer": "STF Layer", "material": "Colloidal silica in PEG-200 (φ=0.61)", "thickness_mm": 0.5, "function": "Shear thickening on impact"},
-            {"layer": "Trauma Pack", "material": "Compressed PE foam", "thickness_mm": 6.0, "function": "Blunt force energy absorption"},
-            {"layer": "Backing", "material": "Ripstop nylon", "thickness_mm": 0.3, "function": "Structural integrity, wear resistance"},
-        ],
         "aging": {"years": [0,1,2,3,4,5], "retention_pct": [100,99,97,95,92,89], "metric": "Tensile strength retention (%)"},
         "synth_route": [
             {"title": "Monomer Selection", "desc": "Select p-phenylenediamine and terephthaloyl chloride for para-aramid backbone.", "smiles": "H₂N-C₆H₄-NH₂ + ClOC-C₆H₄-COCl"},
@@ -77,12 +65,6 @@ SCENARIOS = {
         "confidence": 79,
         "status": "✅ NASA-Deployed",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 45, "water_L": 90},
-        "layers": [
-            {"layer": "Outer Micrometeorite", "material": "Auxetic re-entrant polyimide weave", "thickness_mm": 1.5, "function": "Impact self-sealing (ν = −0.7)"},
-            {"layer": "Thermal/Radiation", "material": "Aluminized Mylar (100 nm Al on PET)", "thickness_mm": 0.1, "function": "IR reflection (ε = 0.04), UV shielding"},
-            {"layer": "Structural", "material": "Kapton® PI film (PMDA-ODA)", "thickness_mm": 0.8, "function": "Thermal stability −269°C to +400°C"},
-            {"layer": "Pressure Liner", "material": "Coated urethane bladder", "thickness_mm": 0.5, "function": "Atmospheric pressure retention"},
-        ],
         "aging": {"years": [0,1,2,3,4,5], "retention_pct": [100,98,95,91,86,80], "metric": "Radiation shielding retention (%)"},
         "synth_route": [
             {"title": "Monomer Selection", "desc": "Select PMDA and 4,4'-oxydianiline (ODA) for polyimide.", "smiles": "PMDA + ODA → Polyamic acid precursor"},
@@ -104,12 +86,6 @@ SCENARIOS = {
         "confidence": 85,
         "status": "⚠️ Active R&D",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 22, "water_L": 50},
-        "layers": [
-            {"layer": "Outer Abrasion", "material": "UHMWPE plain-weave", "thickness_mm": 1.0, "function": "Abrasion, cut resistance"},
-            {"layer": "GO Barrier", "material": "Graphene oxide LbL nanocoating", "thickness_mm": 0.0002, "function": "Water ingress barrier (+35% stiffness)"},
-            {"layer": "Pressure Hull", "material": "Multi-axis UHMWPE braid", "thickness_mm": 8.0, "function": "Hydrostatic load-bearing (100 bar)"},
-            {"layer": "Comfort Inner", "material": "Neoprene foam + nylon jersey", "thickness_mm": 3.0, "function": "Thermal insulation, fit"},
-        ],
         "aging": {"years": [0,1,2,3,4,5], "retention_pct": [100,98,94,90,85,79], "metric": "Compressive strength retention (%)"},
         "synth_route": [
             {"title": "Catalytic Polymerization", "desc": "Ziegler-Natta catalysis of ethylene to UHMWPE (Mw > 3.5 × 10⁶ g/mol).", "smiles": "CH₂=CH₂ →[TiCl₄/Al(C₂H₅)₃] [—CH₂—CH₂—]ₙ"},
@@ -131,12 +107,6 @@ SCENARIOS = {
         "confidence": 94,
         "status": "✅ Military Deployed",
         "sustainability": {"bio_based_pct": 0, "recyclable": "Partial", "co2_kg": 28, "water_L": 60},
-        "layers": [
-            {"layer": "Outer Shell", "material": "Ripstop nylon/cotton blend", "thickness_mm": 0.5, "function": "Durability, IR signature reduction"},
-            {"layer": "ACF Adsorption", "material": "Activated carbon fiber cloth (SBET=1800 m²/g)", "thickness_mm": 1.5, "function": "CWA adsorption (<5 ms)"},
-            {"layer": "Selective Membrane", "material": "Expanded PTFE (0.2 μm pore)", "thickness_mm": 0.03, "function": "Blocks liquid agents, passes H₂O vapor"},
-            {"layer": "Comfort Liner", "material": "Cotton jersey with ASZM-TEDA finish", "thickness_mm": 0.4, "function": "Skin comfort, residual agent neutralization"},
-        ],
         "aging": {"years": [0,1,2,3,4,5], "retention_pct": [100,92,83,72,58,43], "metric": "Adsorption capacity retention (%)"},
         "synth_route": [
             {"title": "Precursor Fiber Preparation", "desc": "Stabilize PAN fibers in air at 250°C for 2h.", "smiles": "[—CH₂-CH(CN)—]ₙ → cyclized ladder polymer"},
@@ -158,12 +128,6 @@ SCENARIOS = {
         "confidence": 76,
         "status": "⚠️ Emerging Concept",
         "sustainability": {"bio_based_pct": 15, "recyclable": "Partial", "co2_kg": 52, "water_L": 140},
-        "layers": [
-            {"layer": "Outer Reflective", "material": "YSZ plasma-sprayed zirconia (250 μm)", "thickness_mm": 0.25, "function": "IR reflection (>85%), Tm = 2715°C"},
-            {"layer": "Basalt Shell", "material": "Basalt fiber woven (13 μm filament)", "thickness_mm": 1.5, "function": "Structural, retains 90% strength at 600°C"},
-            {"layer": "Aerogel Core", "material": "Silica aerogel blanket", "thickness_mm": 10.0, "function": "Insulation (λ = 0.015 W/mK)"},
-            {"layer": "Aluminized Lining", "material": "Aluminized fiberglass", "thickness_mm": 0.5, "function": "Secondary IR reflection, body-side heat shield"},
-        ],
         "aging": {"years": [0,1,2,3,4,5], "retention_pct": [100,96,91,85,78,70], "metric": "Thermal barrier efficiency (%)"},
         "synth_route": [
             {"title": "Basalt Fiber Extrusion", "desc": "Melt crushed basalt rock at 1450°C, extrude through Pt-Rh bushings.", "smiles": "SiO₂·Al₂O₃·Fe₂O₃·CaO → 13 μm filament"},
@@ -185,12 +149,6 @@ SCENARIOS = {
         "confidence": 71,
         "status": "✅ Aerospace Proven",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 180, "water_L": 400},
-        "layers": [
-            {"layer": "Outer Ablative", "material": "Phenolic-impregnated silica cloth (PICA-type)", "thickness_mm": 8.0, "function": "Sacrificial ablation (0.05 mm/s at 1.5 MW/m²)"},
-            {"layer": "C/C Structural", "material": "Carbon-carbon composite (CVI densified)", "thickness_mm": 5.0, "function": "Load-bearing to 2200°C"},
-            {"layer": "SiC Barrier", "material": "Pack-cemented SiC coating", "thickness_mm": 0.1, "function": "Oxidation protection below 1500°C"},
-            {"layer": "Insulation", "material": "Alumina fiber blanket", "thickness_mm": 12.0, "function": "Thermal gradient (2500°C → <200°C inner)"},
-        ],
         "aging": {"years": [0,1,2,3,4,5], "retention_pct": [100,100,99,98,96,94], "metric": "Structural integrity (%)"},
         "synth_route": [
             {"title": "Carbon Fiber Preform", "desc": "3D needle-punch PAN-based carbon fiber felt (density: 0.4 g/cm³).", "smiles": "PAN → 1400°C carbonization → 2200°C graphitization"},
@@ -213,12 +171,6 @@ SCENARIOS = {
         "confidence": 74,
         "status": "🌱 Emerging Research",
         "sustainability": {"bio_based_pct": 62, "recyclable": "Yes", "co2_kg": 8, "water_L": 15},
-        "layers": [
-            {"layer": "Outer Shell", "material": "Recycled meta-aramid woven", "thickness_mm": 0.7, "function": "Flame resistance, durability"},
-            {"layer": "PCM Layer", "material": "Microencapsulated bio-PCM (paraffin/soy wax, Tm=37°C)", "thickness_mm": 2.0, "function": "Adaptive thermal buffering at body temp"},
-            {"layer": "Milkweed Insulation", "material": "Milkweed floss batting (hollow fiber, 80% lumen)", "thickness_mm": 15.0, "function": "Lightweight insulation (density 0.9 g/cm³)"},
-            {"layer": "Comfort Liner", "material": "Organic cotton / recycled PET knit", "thickness_mm": 0.5, "function": "Moisture wicking, skin comfort"},
-        ],
         "aging": {"years": [0,1,2,3,4,5], "retention_pct": [100,95,88,80,71,62], "metric": "Insulation retention (%)"},
         "synth_route": [
             {"title": "Milkweed Harvest & Cleaning", "desc": "Harvest Asclepias syriaca seed pods. Clean and card hollow floss fibers.", "smiles": "Fiber diameter: 20–30 μm, lumen ratio ~80%"},
@@ -240,12 +192,6 @@ SCENARIOS = {
         "confidence": 87,
         "status": "✅ Deployed (variants)",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 42, "water_L": 110},
-        "layers": [
-            {"layer": "Outer Shell", "material": "PBO (Zylon) / para-aramid blend, aluminized", "thickness_mm": 1.0, "function": "Radiant heat reflection, LOI = 68%"},
-            {"layer": "Thermal Barrier", "material": "Aramid felt quilted with aerogel strips", "thickness_mm": 3.5, "function": "Convective/conductive heat resistance"},
-            {"layer": "Moisture Barrier", "material": "Bi-component ePTFE + PU film", "thickness_mm": 0.08, "function": "Waterproof, blood-borne pathogen barrier"},
-            {"layer": "Comfort Liner", "material": "FR viscose / aramid knit", "thickness_mm": 0.6, "function": "Wicking (MVTR > 1200 g/m²/24h)"},
-        ],
         "aging": {"years": [0,1,2,3,4,5], "retention_pct": [100,96,90,83,75,66], "metric": "HTP retention (%)"},
         "synth_route": [
             {"title": "PBO Fiber Synthesis", "desc": "Polycondensation of DAR and TPA in polyphosphoric acid (PPA) at 200°C.", "smiles": "→ Poly(p-phenylene-2,6-benzobisoxazole), σ = 5.8 GPa"},
@@ -267,12 +213,6 @@ SCENARIOS = {
         "confidence": 96,
         "status": "✅ Commercial",
         "sustainability": {"bio_based_pct": 40, "recyclable": "Partial", "co2_kg": 18, "water_L": 45},
-        "layers": [
-            {"layer": "Outer Shell", "material": "FR viscose / Nomex IIIA (60:40) with P140 carbon grid", "thickness_mm": 0.6, "function": "Flash fire protection, ATPV > 12 cal/cm²"},
-            {"layer": "Antistatic Layer", "material": "Carbon-core conductive fiber grid (10 mm spacing)", "thickness_mm": 0.05, "function": "ESD: surface resistivity < 10⁹ Ω"},
-            {"layer": "Moisture Management", "material": "Hydrophilic PET microfiber", "thickness_mm": 0.3, "function": "Sweat transport, cooling"},
-            {"layer": "Comfort Liner", "material": "Cotton-rich knit (80/20 cotton/nylon)", "thickness_mm": 0.4, "function": "Skin comfort for 12h+ wear in 45°C ambient"},
-        ],
         "aging": {"years": [0,1,2,3,4,5], "retention_pct": [100,98,95,91,87,82], "metric": "ATPV retention (%)"},
         "synth_route": [
             {"title": "FR Viscose Production", "desc": "Dissolve wood pulp cellulose in NaOH/CS₂. Add organophosphorus FR agent before spinning.", "smiles": "Cellulose-xanthate + FR → LOI = 28%, bio-based"},
