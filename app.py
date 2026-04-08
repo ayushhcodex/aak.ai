@@ -159,7 +159,7 @@ with st.sidebar:
     st.markdown("---")
 
     selected_threat = st.selectbox(
-        "Select Extreme Environmental Threat",
+        "Select Critical Environmental Risks",
         options=list(SCENARIOS.keys()),
         index=0,
         help="Choose the operational environment the textile must survive.",
@@ -476,9 +476,9 @@ else:
     st.markdown("")
     st.markdown(
         "<div style='text-align:center; padding:4rem 2rem;'>"
-        "<p style='font-family:Orbitron; font-size:1.2rem; color:#334155; letter-spacing:2px;'>SELECT A THREAT SCENARIO</p>"
+        "<p style='font-family:Orbitron; font-size:1.2rem; color:#334155; letter-spacing:2px;'>SELECT A CRITICAL RISK</p>"
         "<p style='font-family:Inter; font-size:0.95rem; color:#475569; margin-top:0.5rem;'>"
-        "Choose an extreme environment from the sidebar and click "
+        "Choose a critical environmental risk from the sidebar and click "
         "<b style='color:#00f0ff;'>⚡ Generate Optimal Material</b> to begin.</p>"
         "</div>",
         unsafe_allow_html=True,
