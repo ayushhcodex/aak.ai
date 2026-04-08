@@ -138,13 +138,6 @@ st.markdown('<p class="full-form">Artificial Intelligence in Material Discovery<
 st.markdown('<p class="hero-title">AIMATRY</p>', unsafe_allow_html=True)
 st.markdown('<hr class="hero-divider">', unsafe_allow_html=True)
 
-st.info(
-    "🔬 **Research Prototype — Conference Demonstration** · "
-    "All property scores are illustrative and normalized on a 0–100 comparative scale. "
-    "Metrics are aligned with ISO 11612, ISO 13934, EN ISO 9151, and EN ISO 11092 frameworks. "
-    "This application demonstrates AI-assisted materials discovery workflows.",
-    icon="ℹ️",
-)
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
