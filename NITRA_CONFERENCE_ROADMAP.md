@@ -68,7 +68,7 @@ This section covers the core textile science concepts you will encounter. As CSE
 - **Standard**: Often assessed via **ASTM D4032** (circular bend test) or bending rigidity (mN·cm).
 - **What to say if asked**: *"Flexibility is inversely related to bending rigidity. We score it based on drape coefficient and bend modulus data. High-protection systems like ballistic vests score low (45/100) because the tightly woven para-aramid structure resists bending."*
 
-### Synthetic Accessibility
+### Manufacturability
 - **What it measures**: How easily the material can be manufactured at scale using existing industrial processes.
 - **Key factors**: Monomer availability, process complexity, number of synthesis steps, equipment requirements.
 - **What to say if asked**: *"This score reflects manufacturability. A score of 95 means all raw materials are commercially available in India and the process uses standard textile machinery. A score of 30 means it requires specialized equipment like CVI furnaces that cost crores to operate."*
@@ -329,6 +329,26 @@ Quick-reference for terms that may come up:
 
 ### The India Opportunity
 *"India imports the majority of its high-performance protective fibers — Kevlar, Nomex, Zylon. An AI-driven materials discovery platform could accelerate the development of indigenous alternatives, reducing dependency on foreign suppliers and strengthening India's defence textile ecosystem. This aligns with the Make in India initiative and the National Technical Textiles Mission (NTTM)."*
+
+---
+
+# 👥 AAK-AI TEAM
+
+## Team Members
+
+| Name | Role | Contact |
+|------|------|---------|
+| **Ayush Singh** | Team Lead & Developer | 📞 9672626676 |
+| **Vansh Mishra** | Core Member | 📞 6399324181 |
+| **Nikhil Kumar Yadav** | Core Member | 📞 9140504848 |
+
+## Under the Guidance of
+
+| Name | Designation | Department |
+|------|------------|------------|
+| | | |
+
+> **Institute**: NITRA Technical Campus (Academic Wing of NITRA), Ghaziabad, Uttar Pradesh, India
 
 ---
 

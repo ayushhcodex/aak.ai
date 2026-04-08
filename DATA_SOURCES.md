@@ -390,6 +390,26 @@ Sustainability metrics (CO₂ kg/kg, water L/kg, bio-based %) are derived from:
 
 ---
 
+# 👥 AAK-AI TEAM
+
+## Team Members
+
+| Name | Role | Contact |
+|------|------|---------|
+| **Ayush Singh** | Team Lead & Developer | 📞 9672626676 |
+| **Vansh Mishra** | Core Member | 📞 6399324181 |
+| **Nikhil Kumar Yadav** | Core Member | 📞 9140504848 |
+
+## Under the Guidance of
+
+| Name | Designation | Department |
+|------|------------|------------|
+| | | |
+
+> **Institute**: NITRA Technical Campus (Academic Wing of NITRA), Ghaziabad, Uttar Pradesh, India
+
+---
+
 *Document prepared by AAK-AI, NITRA Technical Campus.*  
 *All data points are traceable to manufacturer datasheets (primary) or peer-reviewed publications (secondary).*  
 *Last updated: April 2026*
