@@ -131,15 +131,6 @@ section[data-testid="stSidebar"] { border-right: 1px solid rgba(0,240,255,0.12);
 st.markdown('<p class="super-header">INNOVATION IN PROTECTIVE TEXTILE</p>', unsafe_allow_html=True)
 st.markdown('<p class="full-form">Artificial Intelligence in Material Discovery</p>', unsafe_allow_html=True)
 st.markdown('<p class="hero-title">AIMATRY</p>', unsafe_allow_html=True)
-st.markdown(
-    '<p class="hero-subtitle">'
-    "<b>Generative Polymer Designer</b> — Powered by Virtual Forward Synthesis "
-    "and Foundational Chemical Language Models to "
-    "autonomously generate synthetically accessible polymers for next-generation "
-    "protective textiles."
-    "</p>",
-    unsafe_allow_html=True,
-)
 st.markdown('<hr class="hero-divider">', unsafe_allow_html=True)
 
 st.info(
