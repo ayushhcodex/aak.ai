@@ -298,7 +298,7 @@ if generate_clicked:
         time.sleep(0.3)
         st.write("✅ Optimizing for HTP-THL trade-off... **Complete.**")
         time.sleep(0.3)
-        status.update(label="✅ Synthesis complete — material generated!", state="complete")
+        status.update(label="✅ Virtual synthesis complete!", state="complete")
 
     data = SCENARIOS[selected_threat]
 
