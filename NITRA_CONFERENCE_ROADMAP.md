@@ -8,7 +8,7 @@
 This document serves as the **master reference guide** for the AAK-AI team presenting at the **National Conference on Innovation in Protective Textile** at NITRA. It is designed for two purposes:
 
 1. **For the team**: A comprehensive preparation guide covering every scientific concept, standard, and potential question you may face from textile researchers, defence scientists, and industry professionals.
-2. **For NotebookLLM**: A high-density context source that enables AI-assisted Q&A during preparation and practice sessions. Every section is written with explicit definitions so the LLM can provide accurate, contextual answers.
+
 
 > **Team**: AAK-AI  
 > **Institute**: NITRA Technical Campus (Academic Wing of NITRA)  
@@ -23,8 +23,7 @@ This document serves as the **master reference guide** for the AAK-AI team prese
 Use this script to open your demonstration. It establishes credibility, frames the problem, and positions your work as a bridge between CS and textile science.
 
 ---
-
-> *"Good morning/afternoon. We are Team AAK-AI from NITRA Technical Campus, and we are presenting AIMATRY — a Generative Polymer Designer for next-generation protective textiles.*
+ We are Team AAK-AI from NITRA Technical Campus, and we are presenting AIMATRY — a Generative Polymer Designer for next-generation protective textiles.*
 >
 > *The protective textile industry faces a fundamental challenge: designing a material that simultaneously maximizes thermal protection, tensile strength, and flexibility while maintaining wearer comfort. These properties often conflict — a fabric that blocks heat also traps moisture. Traditionally, resolving these trade-offs requires months of experimental iteration.*
 >
