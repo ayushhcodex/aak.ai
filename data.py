@@ -1,6 +1,6 @@
 """
 AIMATRY v3.0 — Hardcoded Data Store
-All scenarios, benchmarks, fiber database, cost, aging, layer stacks, sustainability.
+All scenarios, benchmarks, fiber database, aging, layer stacks, sustainability.
 """
 
 PROPERTY_KEYS = [
