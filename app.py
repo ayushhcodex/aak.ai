@@ -503,10 +503,6 @@ st.markdown("""
             <p style="font-family:JetBrains Mono; font-size:0.7rem; color:#94a3b8; margin:2px 0 0 0;">📞 9140504848</p>
         </div>
     </div>
-    <div style="margin:1rem auto; padding:0.8rem 1.5rem; border:1px solid rgba(0,240,255,0.15); border-radius:8px; display:inline-block; background:rgba(0,240,255,0.03);">
-        <p style="font-family:Orbitron; font-size:0.7rem; color:#64748b; letter-spacing:2px; margin:0 0 0.3rem 0;">UNDER THE GUIDANCE OF</p>
-        <p style="font-family:Inter; font-size:0.85rem; color:#94a3b8; margin:0; font-style:italic;">___________________________</p>
-    </div>
     <p style="font-family:Inter; font-size:0.78rem; color:#475569; margin-top:1rem;">NITRA Technical Campus (Academic Wing of NITRA)</p>
 </div>
 """, unsafe_allow_html=True)
