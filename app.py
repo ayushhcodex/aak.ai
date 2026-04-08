@@ -46,10 +46,15 @@ st.markdown("""
     animation: glow-pulse 3s ease-in-out infinite alternate;
 }
 .super-header {
-    font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 0.8rem;
-    color: #64748b; letter-spacing: 5px; text-transform: uppercase;
-    text-align: center; margin-bottom: -0.5rem; opacity: 0.8;
+    font-family: 'Orbitron', sans-serif; font-weight: 900; font-size: 2.8rem;
+    background: linear-gradient(135deg, #FFD700, #FFA500, #FF8C00, #FFD700);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text; letter-spacing: 4px; text-transform: uppercase;
+    text-align: center; margin-bottom: 0.2rem; line-height: 1.2;
+    text-shadow: 0 0 40px rgba(255,215,0,0.3);
+    animation: gold-glow 3s ease-in-out infinite alternate;
 }
+@keyframes gold-glow { 0% { filter: brightness(1); } 100% { filter: brightness(1.2); } }
 .full-form {
     font-family: 'Inter', sans-serif; font-weight: 400; font-size: 0.9rem;
     color: #00f0ff; text-align: center; margin-bottom: 0.5rem;
