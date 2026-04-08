@@ -308,7 +308,7 @@ if generate_clicked:
         warn_items = " · ".join([f"**{p}**: {s} < {m}" for p, s, m in violations])
         st.markdown(f'<div class="constraint-warn">⚠️ Constraint violations — {warn_items}</div>', unsafe_allow_html=True)
     else:
-        st.markdown('<div class="constraint-pass">✅ All constraints satisfied</div>', unsafe_allow_html=True)
+        st.markdown('<div class="constraint-pass">✅ Target Specifications Achieved</div>', unsafe_allow_html=True)
 
     # ── Main results: two columns ───────────────────────────────
     col_info, col_chart = st.columns([1, 1], gap="large")
