@@ -8,7 +8,7 @@ PROPERTY_KEYS = [
     "Comfort & Breathability (THL)",
     "Tensile Strength",
     "Flexibility",
-    "Synthetic Accessibility",
+    "Manufacturability",
 ]
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -19,7 +19,7 @@ SCENARIOS = {
     "-40°C Arctic Combat": {
         "blend": "Meta-aramid / Aerogel Nanoporous Composite",
         "feature": "Maximizes thermal insulation while retaining high thermo-physiological comfort (THL).",
-        "scores": {"Thermal Protection (HTP)": 85, "Comfort & Breathability (THL)": 70, "Tensile Strength": 60, "Flexibility": 80, "Synthetic Accessibility": 90},
+        "scores": {"Thermal Protection (HTP)": 85, "Comfort & Breathability (THL)": 70, "Tensile Strength": 60, "Flexibility": 80, "Manufacturability": 90},
         "confidence": 92,
         "status": "✅ Commercial",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 31, "water_L": 80},
@@ -46,7 +46,7 @@ SCENARIOS = {
     "High Ballistic Threat": {
         "blend": "Para-aramid / Carbon Nanotube (CNT) Matrix",
         "feature": "Extreme tensile strength and shear thickening properties upon impact.",
-        "scores": {"Thermal Protection (HTP)": 50, "Comfort & Breathability (THL)": 40, "Tensile Strength": 95, "Flexibility": 45, "Synthetic Accessibility": 75},
+        "scores": {"Thermal Protection (HTP)": 50, "Comfort & Breathability (THL)": 40, "Tensile Strength": 95, "Flexibility": 45, "Manufacturability": 75},
         "confidence": 88,
         "status": "⚠️ Active R&D",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 35, "water_L": 120},
@@ -73,7 +73,7 @@ SCENARIOS = {
     "40% Oxygen-Enriched Lunar Environment": {
         "blend": "Polyimide / Aluminized Mylar Laminate with Auxetic Weave",
         "feature": "Maximum radiation shielding and extreme temperature variance tolerance.",
-        "scores": {"Thermal Protection (HTP)": 95, "Comfort & Breathability (THL)": 20, "Tensile Strength": 80, "Flexibility": 60, "Synthetic Accessibility": 50},
+        "scores": {"Thermal Protection (HTP)": 95, "Comfort & Breathability (THL)": 20, "Tensile Strength": 80, "Flexibility": 60, "Manufacturability": 50},
         "confidence": 79,
         "status": "✅ NASA-Deployed",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 45, "water_L": 90},
@@ -100,7 +100,7 @@ SCENARIOS = {
     "Deep-Sea Pressure (1000 m Depth)": {
         "blend": "UHMWPE / Graphene Oxide Laminate",
         "feature": "Exceptional compressive strength and hydrostatic pressure resistance with neutral buoyancy.",
-        "scores": {"Thermal Protection (HTP)": 55, "Comfort & Breathability (THL)": 35, "Tensile Strength": 90, "Flexibility": 50, "Synthetic Accessibility": 65},
+        "scores": {"Thermal Protection (HTP)": 55, "Comfort & Breathability (THL)": 35, "Tensile Strength": 90, "Flexibility": 50, "Manufacturability": 65},
         "confidence": 85,
         "status": "⚠️ Active R&D",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 22, "water_L": 50},
@@ -127,7 +127,7 @@ SCENARIOS = {
     "Chemical / Biological Warfare (CBRN)": {
         "blend": "Activated Carbon Fiber (ACF) / Selectively Permeable PTFE Membrane",
         "feature": "Multi-spectrum chemical agent adsorption with one-way moisture vapor transport.",
-        "scores": {"Thermal Protection (HTP)": 40, "Comfort & Breathability (THL)": 60, "Tensile Strength": 55, "Flexibility": 75, "Synthetic Accessibility": 85},
+        "scores": {"Thermal Protection (HTP)": 40, "Comfort & Breathability (THL)": 60, "Tensile Strength": 55, "Flexibility": 75, "Manufacturability": 85},
         "confidence": 94,
         "status": "✅ Military Deployed",
         "sustainability": {"bio_based_pct": 0, "recyclable": "Partial", "co2_kg": 28, "water_L": 60},
@@ -154,7 +154,7 @@ SCENARIOS = {
     "Volcanic Proximity (1200°C Radiant Heat)": {
         "blend": "Basalt Fiber / Silica Aerogel Quilted Panel with Zirconia Coating",
         "feature": "Extreme radiant-heat reflection and multi-layer ablative protection for operations near active lava flows.",
-        "scores": {"Thermal Protection (HTP)": 98, "Comfort & Breathability (THL)": 15, "Tensile Strength": 70, "Flexibility": 30, "Synthetic Accessibility": 45},
+        "scores": {"Thermal Protection (HTP)": 98, "Comfort & Breathability (THL)": 15, "Tensile Strength": 70, "Flexibility": 30, "Manufacturability": 45},
         "confidence": 76,
         "status": "⚠️ Emerging Concept",
         "sustainability": {"bio_based_pct": 15, "recyclable": "Partial", "co2_kg": 52, "water_L": 140},
@@ -181,7 +181,7 @@ SCENARIOS = {
     "Hypersonic Re-entry (Mach 25+)": {
         "blend": "Carbon-Carbon (C/C) Composite / Phenolic-Impregnated Ablative Layer",
         "feature": "Ultra-high-temperature oxidation resistance with controlled ablation above 2500°C.",
-        "scores": {"Thermal Protection (HTP)": 99, "Comfort & Breathability (THL)": 10, "Tensile Strength": 85, "Flexibility": 15, "Synthetic Accessibility": 30},
+        "scores": {"Thermal Protection (HTP)": 99, "Comfort & Breathability (THL)": 10, "Tensile Strength": 85, "Flexibility": 15, "Manufacturability": 30},
         "confidence": 71,
         "status": "✅ Aerospace Proven",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 180, "water_L": 400},
@@ -209,7 +209,7 @@ SCENARIOS = {
     "Sustainable Arctic (Milkweed / PCM)": {
         "blend": "Milkweed Floss / Recycled Meta-aramid / Bio-PCM Microcapsule Composite",
         "feature": "Sustainable, bio-based thermal insulation with adaptive phase-change temperature regulation for sub-zero operations.",
-        "scores": {"Thermal Protection (HTP)": 72, "Comfort & Breathability (THL)": 78, "Tensile Strength": 40, "Flexibility": 88, "Synthetic Accessibility": 82},
+        "scores": {"Thermal Protection (HTP)": 72, "Comfort & Breathability (THL)": 78, "Tensile Strength": 40, "Flexibility": 88, "Manufacturability": 82},
         "confidence": 74,
         "status": "🌱 Emerging Research",
         "sustainability": {"bio_based_pct": 62, "recyclable": "Yes", "co2_kg": 8, "water_L": 15},
@@ -236,7 +236,7 @@ SCENARIOS = {
     "Wildfire Firefighter (CAL FIRE Standard)": {
         "blend": "PBO (Zylon®) / Aluminized Aramid Shell with Moisture-Wicking Liner",
         "feature": "Maximum flashover protection with sustained comfort for 12+ hour shifts in active wildfire zones.",
-        "scores": {"Thermal Protection (HTP)": 92, "Comfort & Breathability (THL)": 55, "Tensile Strength": 88, "Flexibility": 65, "Synthetic Accessibility": 60},
+        "scores": {"Thermal Protection (HTP)": 92, "Comfort & Breathability (THL)": 55, "Tensile Strength": 88, "Flexibility": 65, "Manufacturability": 60},
         "confidence": 87,
         "status": "✅ Deployed (variants)",
         "sustainability": {"bio_based_pct": 0, "recyclable": "No", "co2_kg": 42, "water_L": 110},
@@ -263,7 +263,7 @@ SCENARIOS = {
     "Industrial Flash Fire (Petrochemical)": {
         "blend": "FR Viscose / Nomex® IIIA Blend with Antistatic Grid",
         "feature": "Certified flash fire protection (ATPV > 12 cal/cm²) with inherent electrostatic dissipation for petrochemical facilities.",
-        "scores": {"Thermal Protection (HTP)": 70, "Comfort & Breathability (THL)": 75, "Tensile Strength": 50, "Flexibility": 85, "Synthetic Accessibility": 95},
+        "scores": {"Thermal Protection (HTP)": 70, "Comfort & Breathability (THL)": 75, "Tensile Strength": 50, "Flexibility": 85, "Manufacturability": 95},
         "confidence": 96,
         "status": "✅ Commercial",
         "sustainability": {"bio_based_pct": 40, "recyclable": "Partial", "co2_kg": 18, "water_L": 45},

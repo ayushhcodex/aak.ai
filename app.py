@@ -173,11 +173,11 @@ with st.sidebar:
         c_thl = st.slider("Min. Comfort & Breathability", 0, 100, 0, 5, key="c_thl")
         c_str = st.slider("Min. Tensile Strength", 0, 100, 0, 5, key="c_str")
         c_flx = st.slider("Min. Flexibility", 0, 100, 0, 5, key="c_flx")
-        c_acc = st.slider("Min. Synthetic Accessibility", 0, 100, 0, 5, key="c_acc")
+        c_acc = st.slider("Min. Manufacturability", 0, 100, 0, 5, key="c_acc")
 
     constraints = {
         "Thermal Protection (HTP)": c_htp, "Comfort & Breathability (THL)": c_thl,
-        "Tensile Strength": c_str, "Flexibility": c_flx, "Synthetic Accessibility": c_acc,
+        "Tensile Strength": c_str, "Flexibility": c_flx, "Manufacturability": c_acc,
     }
     st.markdown("")
 
@@ -242,7 +242,7 @@ def build_pareto_chart(selected_name, selected_scores):
     front_perf = front_perf[idx]
     front_access = np.sort(front_access)[::-1]
     sel_c = np.mean([selected_scores["Thermal Protection (HTP)"], selected_scores["Tensile Strength"], selected_scores["Flexibility"]])
-    sel_a = selected_scores["Synthetic Accessibility"]
+    sel_a = selected_scores["Manufacturability"]
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=perf, y=access, mode="markers", marker=dict(size=6, color="rgba(100,116,139,0.4)"), name="Candidate Polymers", hovertemplate="Perf: %{x:.0f}<br>Accessibility: %{y:.0f}<extra></extra>"))
     fig.add_trace(go.Scatter(x=front_perf, y=front_access, mode="lines", line=dict(color="#00f0ff", width=2, dash="dash"), name="Pareto Front"))
@@ -250,7 +250,7 @@ def build_pareto_chart(selected_name, selected_scores):
                              text=["AI SELECTED"], textposition="top center", textfont=dict(size=10, color="#00ff88", family="Orbitron"), name="Selected Material"))
     fig.update_layout(
         xaxis=dict(title=dict(text="Composite Performance Score", font=dict(color="#94a3b8", family="Inter", size=12)), gridcolor="rgba(0,240,255,0.06)", tickfont=dict(color="#64748b", size=10), range=[0, 105]),
-        yaxis=dict(title=dict(text="Synthetic Accessibility", font=dict(color="#94a3b8", family="Inter", size=12)), gridcolor="rgba(0,240,255,0.06)", tickfont=dict(color="#64748b", size=10), range=[0, 105]),
+        yaxis=dict(title=dict(text="Manufacturability", font=dict(color="#94a3b8", family="Inter", size=12)), gridcolor="rgba(0,240,255,0.06)", tickfont=dict(color="#64748b", size=10), range=[0, 105]),
         paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", margin=dict(l=50, r=20, t=30, b=50), height=380,
         legend=dict(font=dict(size=10, color="#94a3b8", family="Inter"), bgcolor="rgba(0,0,0,0)", x=0.02, y=0.98), font=dict(family="Inter"),
     )
