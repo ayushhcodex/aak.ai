@@ -8,61 +8,137 @@
 
 ---
 
-## 🌟 Key Features
-
-- **🛡️ 10 Extreme Threat Scenarios**: Specialized material recommendations for environments including Wildfire, Industrial Flash Fire, Milkweed, and more.
-- **📈 Advanced Analytics**:
-  - **Pareto Frontier**: Visualization of the trade-off between performance and synthetic accessibility.
-  - **Radar Charts**: Multi-dimensional property comparison against mission parameters.
-  - **Aging Predictions**: 5-year durability and property retention forecasting.
-- **🏗️ Material Engineering**:
-  - **Multi-layer Stack Visualization**: Cross-section analysis of garment layers (Outer Shell, Moisture Barrier, Thermal Liner, etc.).
-  - **Synthetic Route Generation**: Step-by-step pathway using Virtual Forward Synthesis.
-- **🏭 Professional Standards**:
-  - **Commercial Benchmarks**: Direct comparison with industry-leading fibers (Kevlar®, Nomex®, PBI, etc.).
-  - **International Compliance**: Aligned with ISO 11612, ISO 13934, EN ISO 9151, and NFPA frameworks.
-- **🌱 Sustainability & ESG**: CO₂ footprint (kg/kg), water usage (L/kg), and recyclability scoring for responsible innovation.
+## 📖 Table of Contents
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [Project Structure](#-project-structure)
+- [Installation & Setup](#-installation--setup)
+- [Contribution Guide](#-contribution-guide)
+  - [Adding New Scenarios](#adding-new-scenarios)
+  - [Updating Fiber Data](#updating-fiber-data)
+- [Internal Architecture](#-internal-architecture)
+- [Tech Stack](#-tech-stack)
+- [License](#-license)
 
 ---
 
-## 🚀 Getting Started
+## 🌟 Overview
+AIMATRY simulates an AI-driven discovery engine that screens millions of monomers to find optimal material blends for extreme environments. Developed for the **AgriDrone AI Architecture** initiative, it bridges the gap between material science research and industrial application.
+
+---
+
+## 🛡️ Key Features
+- **10 Extreme Threat Scenarios**: From Arctic Combat to Hypersonic Re-entry.
+- **Advanced Analytics**: Radar charts, Pareto frontiers, and aging predictions using Plotly.
+- **Material Engineering**: Multi-layer stack visualization and synthetic route generation.
+- **Professional Standards**: Aligned with ISO, EN, and Indian BIS standards.
+- **Sustainability/ESG**: Detailed scoring for CO₂ and water footprint.
+
+---
+
+## 📂 Project Structure
+```text
+.
+├── app.py              # Main Streamlit application (UI, Styling, Logic)
+├── data.py             # Knowledge Base (Scenarios, Fibers, Benchmarks)
+├── requirements.txt    # Python dependencies
+└── README.md           # Documentation
+```
+
+---
+
+## 🚀 Installation & Setup
 
 ### Prerequisites
+- Python 3.8+
+- [Conda](https://docs.conda.io/en/latest/) or [venv](https://docs.python.org/3/library/venv.html) (Recommended)
 
-- Python 3.8 or higher
-- [pip](https://pip.pypa.io/en/stable/installation/)
-
-### Installation
-
+### Local Setup
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/ayushhcodex/aak.ai.git
    cd aak.ai
    ```
 
-2. **Install dependencies**:
+2. **Create a virtual environment**:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the application**:
+4. **Run the app**:
    ```bash
    streamlit run app.py
    ```
 
 ---
 
-## 🧪 Tech Stack
+## 🤝 Contribution Guide
 
-- **Frontend/App Framework**: [Streamlit](https://streamlit.io/)
-- **Data Visualization**: [Plotly](https://plotly.com/python/), [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/)
-- **Design Architecture**: Custom CSS with Google Fonts (Orbitron, Inter, JetBrains Mono) for a premium industrial aesthetic.
+We welcome contributions from material scientists, chemists, and AI researchers!
+
+### Adding New Scenarios
+All scenario data is stored in `data.py` under the `SCENARIOS` dictionary. To add a new threat:
+1. Open [data.py](file:///Users/ayushsingh/Developer/AgriDrone_AI_Architecture.pdfAgriDrone_AI_Architecture/AAK-AI%20/AAK.AI_MVP/data.py).
+2. Follow the existing schema:
+   ```python
+   "Scenario Name": {
+       "blend": "Description of polymer material",
+       "feature": "Unique selling point",
+       "scores": { ... }, # Normalized 0-100 scores
+       "confidence": 90,
+       "status": "✅ Commercial",
+       "cost_inr": "₹X,XXX/kg",
+       "cost_usd": "$XX/kg",
+       "sustainability": { ... },
+       "layers": [ ... ],
+       "aging": { ... },
+       "synth_route": [ ... ],
+       "chat_explanation": [ ... ]
+   }
+   ```
+3. The UI will automatically detect and list your new scenario in the sidebar.
+
+### Updating Fiber Data
+Add or edit fibers in `FIBER_DATABASE` (line 335 of `data.py`) to update the reference table used in the "Fiber Database" tab.
 
 ---
 
-## 📜 Disclaimer
+## 🏗️ Internal Architecture
 
-*This is a research prototype intended for conference demonstrations and workflow validation. All property scores are illustrative and normalized on a comparative scale. It is not intended for production-grade textile engineering without further experimental validation.*
+### Virtual Forward Synthesis (VFS)
+The "synthesis" shown in the app is a high-fidelity simulation. In `app.py`, the `st.status` component mimics the computation of:
+1. Monomer screening (14.2M database).
+2. Retrosynthetic feasibility.
+3. Pareto frontier optimization.
+
+### Visualization Engine
+- **Radar Charts**: Powered by `go.Scatterpolar` to show trade-offs between HTP, THL, Strength, and Flexibility.
+- **Pareto Front**: Uses `go.Scatter` to visualize the efficiency frontier of performance vs. accessibility.
+
+### Styling
+The application uses a **Cyber-Industrial Theme** built with custom CSS injected via `st.markdown`. It uses Google Fonts:
+- **Orbitron**: For headers and data values.
+- **Inter**: For body text and descriptions.
+- **JetBrains Mono**: For SMILES strings and technical specs.
+
+---
+
+## 🧬 Tech Stack
+- **Framework**: [Streamlit](https://streamlit.io/)
+- **Visuals**: [Plotly Express/Graph Objects](https://plotly.com/python/)
+- **Data Handling**: [Pandas](https://pandas.pydata.org/), [NumPy](https://numpy.org/)
+- **Typography**: [Google Fonts API](https://fonts.google.com/)
+
+---
+
+## 📜 License
+This project is currently for internal research and conference demonstration. See the `LICENSE` file (if available) for specific terms.
 
 ---
 
