@@ -507,6 +507,35 @@ else:
     )
 
 # ── Footer ──────────────────────────────────────────────────────────────────
+st.markdown("---")
+st.markdown("""
+<div style="padding:1.5rem 1rem; text-align:center;">
+    <p style="font-family:Orbitron; font-size:0.85rem; color:#00f0ff; letter-spacing:3px; margin-bottom:1.2rem;">AAK-AI TEAM</p>
+    <div style="display:flex; justify-content:center; gap:2.5rem; flex-wrap:wrap; margin-bottom:1.2rem;">
+        <div style="text-align:center;">
+            <p style="font-family:Inter; font-size:0.9rem; font-weight:600; color:#e2e8f0; margin:0;">Ayush Singh</p>
+            <p style="font-family:Inter; font-size:0.72rem; color:#64748b; margin:0;">Team Lead &amp; Developer</p>
+            <p style="font-family:JetBrains Mono; font-size:0.7rem; color:#94a3b8; margin:2px 0 0 0;">📞 9672626676</p>
+        </div>
+        <div style="text-align:center;">
+            <p style="font-family:Inter; font-size:0.9rem; font-weight:600; color:#e2e8f0; margin:0;">Vansh Mishra</p>
+            <p style="font-family:Inter; font-size:0.72rem; color:#64748b; margin:0;">Core Member</p>
+            <p style="font-family:JetBrains Mono; font-size:0.7rem; color:#94a3b8; margin:2px 0 0 0;">📞 6399324181</p>
+        </div>
+        <div style="text-align:center;">
+            <p style="font-family:Inter; font-size:0.9rem; font-weight:600; color:#e2e8f0; margin:0;">Nikhil Kumar Yadav</p>
+            <p style="font-family:Inter; font-size:0.72rem; color:#64748b; margin:0;">Core Member</p>
+            <p style="font-family:JetBrains Mono; font-size:0.7rem; color:#94a3b8; margin:2px 0 0 0;">📞 9140504848</p>
+        </div>
+    </div>
+    <div style="margin:1rem auto; padding:0.8rem 1.5rem; border:1px solid rgba(0,240,255,0.15); border-radius:8px; display:inline-block; background:rgba(0,240,255,0.03);">
+        <p style="font-family:Orbitron; font-size:0.7rem; color:#64748b; letter-spacing:2px; margin:0 0 0.3rem 0;">UNDER THE GUIDANCE OF</p>
+        <p style="font-family:Inter; font-size:0.85rem; color:#94a3b8; margin:0; font-style:italic;">___________________________</p>
+    </div>
+    <p style="font-family:Inter; font-size:0.78rem; color:#475569; margin-top:1rem;">NITRA Technical Campus (Academic Wing of NITRA)</p>
+</div>
+""", unsafe_allow_html=True)
+
 st.markdown(
     '<p class="footer-text">'
     "© 2026 AIMATRY — Materials Intelligence Platform &nbsp;|&nbsp; "
